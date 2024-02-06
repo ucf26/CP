@@ -26,6 +26,7 @@ signed main() {
     // ex:      consider  1 = 0000 0000 0000 0001
     // we need to make it   = 1000 0000 0000 0000 
     // so the most bit is one and the rest is zero 
+    // but if we add ones it may decreas number of shifts (if there is two consecutive ones (0011) --> 0100)
     int n; cin>>n;
     int num;
     for(int i=0;i<n;i++){
